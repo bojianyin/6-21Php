@@ -33,6 +33,7 @@
 		<input type="text" name="user" placeholder="请输入您的账号...">
 		<input type="password" name="pwd" placeholder="请输入您的密码...">
 		<input type="submit" value="登陆" onclick="return checkLogin()">
+		<a href="resiger.php">还没账号?去注册</a>
 	</form>
 	<script>
 	var form =document.forms[0];

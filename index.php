@@ -44,11 +44,12 @@
 	</form>
 	<?php
 	foreach($rowList as $row){
+		$tim=date("Y-m-d h:i:s",$row['intime']);
 	?>
 	<div class="group clearFix">
 		<div class="user"><?php echo $row['title']?></div>
 		<div class="title"><?php echo $row['content']?></div>
-		<div class="times"><?php if(isset($_SESSION['name'])){?><a href="del.php?id=<?php echo $row['id']?>">删除</a><?}?><?php echo $row['intime']?></div>
+		<div class="times"><?php if(isset($_SESSION['name'])){?><a href="del.php?id=<?php echo $row['id']?>">删除</a><?}?><?php echo $tim?></div>
 	</div>
 	<?php
 	}
